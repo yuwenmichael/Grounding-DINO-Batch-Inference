@@ -1,0 +1,1 @@
+python demo/inference_on_a_image.py -c groundingdino/config/GroundingDINO_SwinT_OGC.py -p weights/groundingdino_swinb_cogcoor.pth -i .asset/cats.png -o "outputs/0" -t "cat ear." --cpu-only
