@@ -3,12 +3,17 @@
 # Table of Contents
 - [GroundingDINO Infer in Batches](#groundingdino-infer-in-batches)
 - [Table of Contents](#table-of-contents)
+  - [Attentions](#attentions)
   - [Inspirations](#inspirations)
   - [Instructions](#instructions)
     - [1. Prepare the images](#1-prepare-the-images)
     - [2. Create file path list](#2-create-file-path-list)
     - [3. Run the inference](#3-run-the-inference)
-  - [Attentions](#attentions)
+
+
+## Attentions
+The result is already presented in the `crop_images` folder in this repo. If you want to run the program again, please make sure you delete the `crop_images` folder first. Otherwise, the program will not run properly.
+
 ## Inspirations
 By following this github [post](https://github.com/IDEA-Research/GroundingDINO/issues/102#issuecomment-1558728065) provided by [ashrielbrian](https://github.com/ashrielbrian), I managed to get the inference to work in batches. Modifications need to be made as the original post is only testing the latency of the model. The modifications are made in the `batch_utlities.py` file.
 
@@ -113,6 +118,3 @@ Create a file path list By running ``` python create_img_path_list.py```. This w
 python inference_gdino.py
 ```
 The results will be saved in the `./crop_images` folder, where the name of the folder is the sku (aka product ID) of a product.
-
-## Attentions
-The result is already presented in the `crop_images` folder in this repo. If you want to run the program again, please make sure you delete the `crop_images` folder first. Otherwise, the program will not run properly.
